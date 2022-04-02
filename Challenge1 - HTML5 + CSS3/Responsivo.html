@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste de Responsividade</title>
+  <style>
+    body {
+      background-color: gray;
+
+    }
+
+    main {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+
+      /* min-width e max-width, identifica o tamanho máximo e minímo da caixa, quando se aumenta e diminue o tamanho da janela */
+      min-width: 280px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    /* quando usamos 100%, significa que estamos adequando a imagem ao tamanho da div (caixa) 100% do ajuste) */
+    img {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>
+      Testando Responsividade
+    </h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, nesciunt dignissimos facere incidunt nihil debitis aliquid, temporibus consequuntur distinctio deleniti illum delectus labore harum maxime praesentium, libero neque ratione cumque.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis qui necessitatibus quaerat explicabo voluptate quas esse asperiores placeat minus, adipisci ducimus voluptatum accusantium tempora itaque magnam, sit inventore tempore. Fugiat.
+    </p>
+    <picture>
+      <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+      <img src="imagens/irina-blok.jpg" alt="irina-blok">
+    </picture>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum culpa voluptate veritatis iusto voluptates voluptas, eligendi inventore aperiam, reprehenderit repellendus, harum dignissimos unde dolorem similique incidunt. Perspiciatis saepe laboriosam voluptatem.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptate voluptates at cum magni reiciendis! Temporibus molestias aliquid, blanditiis beatae amet aut saepe dolor aspernatur fugiat tempore quos odit cumque!
+    </p>
+  </main>
+</body>
+</html>
