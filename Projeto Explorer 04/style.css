@@ -1,0 +1,202 @@
+:root {
+  --bc1: hsl(228, 15%, 38%); /*gray*/
+  --bc2: hsl(348, 100%, 66%); /*pink*/
+  --bc3: hsl(0, 0%, 94%); /*white*/
+  --bc4: hsl(240, 20%, 98%); /*background buttom white*/
+  --bc5: hsl(240, 25%, 92%); /*border white*/
+  --bc6: hsl(0, 0%, 90%); /*background page*/
+  --bc7: hsl(0, 0%, 100%); /*white pure */
+  --bc8: hsl(228, 15%, 38%); /*gray letter*/
+
+  --ff1: 'Poppins', sans-serif; /* normal/400 */
+  --ff2: 'Staatliches', cursive; /* normal/400 */
+
+  font-size: 62.5%; /* facilitate responsiveness meansures */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bc6)
+}
+
+body::before {
+  content: '';
+  width: 100%;
+  height: 44.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: var(--bc1);
+}
+
+.page {
+  width: 75.0rem;
+  margin: 0 auto;
+}
+
+header {
+  width: 35.0rem;
+  margin-top: 14.0rem;
+}
+
+header h1 {
+  font-family: var(--ff2);
+  font-size: 4.8rem;
+  line-height: 6.0rem;
+  color: var(--bc3);
+  font-weight: 400; 
+}
+
+header p {
+  font-family: var(--ff1);
+  font-size: 2.0rem;
+  line-height: 3.0rem;
+  color: var(--bc3);
+  font-weight: 400;
+  margin-top: 1.8rem;
+}
+
+form {
+  background-color: var(--bc7);
+  border-radius: 1rem 1rem 0 0;
+  padding: 6.4rem;
+  margin-top: 5.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.0rem;
+}
+
+fieldset {
+  border: none;
+}
+
+.fieldset-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.0rem;
+}
+
+fieldset legend {
+  font-family: var(--ff2);
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  color: var(--bc8);
+  border-bottom: 1px solid var(--bc5);
+  padding-bottom: 1rem;
+  width: 100%;
+} /* form title */
+
+.input-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-content label {
+  color: var(--bc8);
+  font-family: var(--ff1);
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  margin-top: 2.0rem;
+}
+
+.input-content label span {
+  color: #C1BCCC;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2.0rem;
+  margin-left: 9px;
+}
+.input-content label span:hover {
+  color: #6c6a71;
+}
+
+.input-content input {
+  border-radius: 6px;
+  background-color: var(--bc4);
+  border: 1px solid var(--bc5);
+  height: 5.6rem;
+  padding: 0 1rem;
+  font-size: 1.6rem;
+  line-height:2.4rem;
+  color: var(--bc1);
+  margin-top: 8px;
+
+}
+
+.box-name {
+  display: flex;
+  gap: 2.2rem;
+}
+.box-name .input-content {
+  width: 30rem;
+}
+
+.col-date {
+  display: flex;
+  gap: 20px;
+}
+
+.col-date > div:nth-child(1) {
+  width: 50%;
+}
+.col-date > div:nth-child(2) {
+  width: 25%;
+}
+.col-date > div:nth-child(3) {
+  width: 25%;
+}
+
+.sub-title {
+  font-family: var(--ff2);
+  color: var(--bc1);
+  font-weight: 400;
+  font-size: 2.0rem;
+  line-height: 3.4rem;
+  margin-top: 2.2rem;
+}
+
+.col-date label {
+  margin-top: 0;
+}
+
+fieldset p:nth-child(4) {
+  margin-top: 6px;
+}
+
+footer {
+  border-radius: 0 0 1rem 1rem;
+  background-color: var(--bc1);
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  border: 0;
+  border-radius: 1rem;
+  background-color: var(--bc2);
+  width: 60.8rem;
+  height: 5.6rem;
+  font-weight: 400;
+  font-size: 2.0rem;
+  line-height: 2.6rem;
+  font-family: var(--ff2);
+  color: white;
+}
+
+footer .button:hover {
+  background-color: hsl(348, 56%, 53%);
+}
+
+input:invalid {
+  border: 2px solid rgb(189, 14, 14);
+}
