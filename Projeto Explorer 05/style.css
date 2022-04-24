@@ -1,0 +1,319 @@
+:root {
+  --font1: 'Palanquin', sans-serif;
+  --font2: 'Staatliches', cursive;
+  --font3: 'Open Sans', sans-serif;
+
+  --cor1: #5C6981;
+  --cor2: #8E9AAF;
+  --cor3: #CBC0D3;
+  --cor4: #FEEAFA;
+  --cor5: #EFF1FF;
+  --cor6: #23053A;
+
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width:8px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #CBC0D3;
+}
+::-webkit-scrollbar-thumb {
+  background: #DB4EF5;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.page {
+  width: 38.4rem;
+  background-color: var(--cor5);
+}
+
+header {
+  background-color: var(--cor2);
+  padding-top: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+header img {
+  width: 13.7rem;
+  height: 13.7rem;
+}
+
+header h1 {
+  background-color: var(--cor3);
+  font-family: var(--font2);
+  color: var(--cor5);
+  font-size: 4rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.05em;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  font-weight: 400;
+  width:100%;
+  text-align: center;
+}
+
+.history {
+  background-color: var(--cor5);
+  padding: 0 4rem 0 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.0rem;
+  padding: 1.4rem 3.2rem 0 3.2rem;
+}
+
+.history h2 {
+  font-family: var(--font2);
+  font-weight: 400;
+  font-size: 3.0rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.05em;
+  color: var(--cor1);
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.history p {
+  font-family: var(--font1);
+  color: var(--cor1);
+  text-align: justify;
+  font-weight: 400;
+  font-size: 2.0rem;
+  line-height: 2rem;
+}
+
+main {
+  display: grid;
+  gap: 3.2rem;
+  justify-content: center;
+  margin: 6rem 0;
+}
+
+.paletas {
+  background-image: url(image/sorvete1.png);
+  background-repeat: no-repeat;
+  width: 32rem;
+  height: 25rem;
+}
+.shakes {
+  background-image: url(image/sorvete2.png);
+  background-repeat: no-repeat;
+  width: 32rem;
+  height: 45rem;
+}
+.massas {
+  background-image: url(image/sorvete3.png);
+  background-repeat: no-repeat;
+  width: 32rem;
+  height: 25rem;
+}
+.picoles {
+  background-image: url(image/sorvete4.png);
+  background-repeat: no-repeat;
+  width: 32rem;
+  height: 45rem;
+}
+
+#card {
+  position: relative;
+  animation-name: topdown;
+  animation-duration: 700ms;
+}
+#card h2 {
+  background-color: var(--cor3);
+  border-radius: 2.0rem;
+  width: 11.2rem;
+  height: 3.5rem;
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font2);
+  font-weight: 400;
+  font-size: 2.0rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.05em;
+  color: var(--cor6);
+  animation-name: topdown;
+  animation-duration: 700ms;
+  animation-delay: 500ms;
+  animation-fill-mode: both;
+}
+
+#card:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  display: none;
+}
+
+@keyframes topdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+
+@keyframes downtop {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes move {
+  0%   {background: #CBC0D3;}
+  10%  {background: #DB4EF5;}
+  20%  {background: #DE52C2;}
+  30%  {background: #F54E83;}
+  40%  {background: #EB534B;}
+  50%  {background: pink;}
+  60%  {background: #EB534B;}
+  70%  {background: #F54E83;}
+  80%  {background: #DE52C2;}
+  90%  {background: #DB4EF5;}
+  100% {background: #CBC0D3;}
+}
+
+@media (min-width:900px) and (min-height:620px) {
+  body {
+    flex-direction: column;
+  }
+
+  .page {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+  }
+
+  header {
+    width: 33rem;
+  }
+
+  .history {
+    background-color: var(--cor2);
+  }
+  .history h2 {
+    color: var(--cor5);
+  }
+  .history p {
+    color: var(--cor5);
+  }
+
+  .paletas {
+    background-image: url(image/sorvete1.png);
+    background-repeat: no-repeat;
+    background-size: 22rem 15rem;
+    width: 22rem;
+    height: 15rem;
+  }
+  .shakes {
+    background-image: url(image/sorvete2.png);
+    background-repeat: no-repeat;
+    background-size: 22rem 35rem;
+    width: 22rem;
+    height: 35rem;
+  }
+  .massas {
+    background-image: url(image/sorvete3.png);
+    background-repeat: no-repeat;
+    background-size: 22rem 15rem;
+    width: 22rem;
+    height: 15rem;
+  }
+  .picoles {
+    background-image: url(image/sorvete4.png);
+    background-repeat: no-repeat;
+    background-size: 22rem 35rem;
+    width: 22rem;
+    height: 35rem;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    font-family: var(--font3);
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    animation: move 5s infinite;
+    width: 100vw;
+    justify-content: center;
+  }
+  footer img {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+  }
+  footer p span {
+    font-family: var(--font3);
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+  }
+
+  main {
+    display:grid;
+    grid-template-areas:
+        'A B C'
+        'D B F'
+        'D E F';
+    align-content: center;
+    margin: auto;
+  }
+
+  main div:nth-child(1) {
+    grid-area: A;
+    align-self: stretch;
+  }
+  main div:nth-child(2) {
+    grid-area: B;
+    align-self: stretch;
+  }
+  main div:nth-child(3) {
+    grid-area: C;
+    align-self: stretch;
+  }
+  main div:nth-child(4) {
+    grid-area: D;
+    align-self: stretch;
+  }
+  main div:nth-child(5) {
+    grid-area: E;
+    align-self: stretch;
+  }
+  main div:nth-child(6) {
+    grid-area: F;
+    align-self: stretch;
+  }
+}
+
