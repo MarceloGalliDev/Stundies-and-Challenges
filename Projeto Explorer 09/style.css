@@ -1,0 +1,307 @@
+:root {
+  --font-primary: 'Roboto', sans-serif;
+
+  --color2: #103c4a;
+  --color3: #0B3845;
+  --ffcolor: #C4C4CC;
+
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  background: url(image/background-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 95%;
+}
+
+body * {
+  font-family: var(--font-primary);
+}
+
+#mainPage {
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  align-content: space-between;
+}
+
+header {
+  margin: 4rem 7.2rem;
+}
+
+.mainBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menuNav {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.menuNav path {
+  fill: var(--ffcolor);
+}
+
+nav{
+  display: flex;
+  gap: 3.2rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: clamp(1rem, 1rem + 1vw, 2.2rem);
+  color: var(--ffcolor);
+}
+
+nav a:last-child {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+nav a:active {
+  font-weight: 700;
+}
+
+.mode {
+  display: flex;
+  align-items: center;
+
+}
+
+#toggle {
+  display: none;
+}
+.changeMode {
+  display: flex;
+  width: clamp(4rem, 5rem + 5vw, 9rem);
+  height: 2rem;
+  background-color: var(--color2);
+  border-radius: 3rem;
+  position: relative;
+  cursor: pointer;
+}
+.changeMode::after {
+  content: '';
+  background-image: url(/icons/lua1.svg);
+  width: clamp(2rem, 2rem + 2vw, 4rem);
+  height: clamp(2rem, 2rem + 2vw, 4rem);
+  background-color: #2d35a9;
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .25);
+  position: absolute;
+  top: -10px;
+  left: 0;
+  display: grid;
+  place-content: center;
+  line-height: 0;
+  transition: background-color 2s, transform 1s ease-in;
+}
+#toggle:checked + .changeMode::after {
+  content: '';
+  background-image: url(/icons/sol1.svg);
+  background-color: rgb(200, 200, 43);
+  transform: translateX(50px) rotate(360deg);
+}
+
+footer {
+  margin: 2rem 3.2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+footer svg {
+  width: clamp(1rem, 1.5rem + 2vw, 3rem);
+}
+
+.icon path {
+  text-shadow: 0 0 1.5rem;
+  animation: animate 2s infinite linear;
+}
+
+.mainText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #E1E1E6;
+  gap: 2.4rem;
+}
+.mainText h1 {
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(2.4rem, 2.4rem + 2vw, 4.8rem);
+  line-height: 125%;
+}
+.mainText a {
+  text-decoration: none;
+  color: #E1E1E6;
+  animation: animateBorder 2s infinite linear;
+  border: 2px solid rgba(68, 61, 61, 0.316);
+  padding: 1.2rem 3.2rem;
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  border-radius: .5rem;
+}
+.mainText a:active {
+  background-color: #E1E1E6;
+  color: grey;
+}
+
+.universeText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #E1E1E6;
+  gap: 2.4rem;
+  margin-left: 10.2rem;
+}
+.universeText h1 {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: clamp(2.4rem, 2.4rem + 2vw, 4.8rem);
+  line-height: 125%;
+}
+.universeText p {
+  text-align: left;
+  width: clamp(32.4rem, 32.4rem + 20vw, 64.8rem);
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 160%;
+}
+
+.explorerText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #E1E1E6;
+  gap: 2.4rem;
+  margin-left: 10.2rem;
+}
+.explorerText h1 {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: clamp(2.4rem, 2.4rem + 2vw, 4.8rem);
+  line-height: 125%;
+}
+.explorerText p {
+  text-align: left;
+  width: clamp(32.4rem, 32.4rem + 20vw, 64.8rem);
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 160%;
+}
+
+.page404 {
+  text-align: center;
+  color: #E1E1E6;
+}
+
+@keyframes animate {
+  0%,
+  10% {
+    fill: #046a64;
+  }
+  30% {
+    fill: #00bfff;
+  }
+  50% {
+    fill: #d6f3b8;
+  }
+  70% {
+    fill: #86eff3;
+  }
+  90% {
+    fill:#2d2590;
+  }
+}
+
+@keyframes animateBorder {
+  0%,
+  10% {
+    border: 2px solid #046a64;
+    box-shadow:  0 0 1em #046a64, 0 0 1em white;
+  }
+  30% {
+    border: 2px solid #00bfff;
+  }
+  50% {
+    border: 2px solid #d6f3b8;
+  }
+  70% {
+    border: 2px solid #86eff3;
+  }
+  90% {
+    border: 2px solid #1a164f;
+  }
+}
+
+.lightHome {
+  background: url(image/background-light1.jpg);
+  font-size: 1.6rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 95%;
+}
+
+.lightUniverse {
+  background: url(image/background-light2.jpg);
+  font-size: 1.6rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 95%;
+}
+
+.lightExploration {
+  background: url(image/background-light3.jpg);
+  font-size: 1.6rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 95%;
+}
+
+.home{
+  background: url(image/background-1.png);
+  font-size: 1.6rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 95%;
+}
+.universe {
+  background: url(image/background-2.png);
+  font-size: 1.6rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 95%;
+  z-index: 2;
+}
+.exploration {
+  background: url(image/background-3.png);
+  font-size: 1.6rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 95%;
+}
