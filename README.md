@@ -1,5 +1,11 @@
-Projeto criado com base no estudo da Rocketseat, NLW - Episódio 06
+Projeto criado na semana NLW - Ep08 da Rocketseat
 
-Usando conhecimentos adquiridos ao longo de cursos na própria plataforma, todos seus direitos são reservado a Rocketseat, e agradecimentos aos professores envolvidos.
+Foram utilizados várias bibliotecas/frameworks, principais sendo:
+- React e React Native
+- TypeScrypt
+- TailWind CSS
+- Prisma
+- Expo
+- Jest
 
-Acesse>> www.rocketseat.com.br
+Siga rocketseat.com.br
