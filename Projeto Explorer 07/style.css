@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font1: 'Open Sans', sans-serif;
+  --font2: 'Palanquin', sans-serif;
+  --font3: 'Staatliches', cursive;
+  font-size: 62.5%;
+}
+
+body {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: rgb(233, 168, 94);
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: var(--font3);
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem 0;
+  background-color: rgba(105, 105, 72, 0.651);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-family: var(--font3);
+
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  font-family: var(--font1);
+  border: 1px solid rgba(0, 0, 0, 0.644);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+label {
+  font-size: 1.2rem;
+}
+
+.cards input {
+  display: flex;
+  margin-top: 3px;
+  border-radius: 5px;
+  outline: 0;
+  padding: 7px;
+  border: 0;
+}
+
+.cards input:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+button {
+  width: 17.4rem;
+  font-family: var(--font1);
+  border: 0;
+  outline: 0;
+  background-color: rgb(233, 168, 94);
+  border-radius: 5px;
+  transition: all ease 0.2s;
+}
+
+button:hover {
+  background-color: rgb(228, 141, 41)
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font1);
+  border: 1px solid rgba(0, 0, 0, 0.644);
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+
+}
+
+thead th {
+  background-color: rgba(105, 105, 72, 0.651);
+  border: 1px solid rgb(82, 79, 79);
+}
+
+thead th:nth-child(1) {
+  text-align: left;
+  padding-left: 5px;
+}
+
+tbody tr td {
+  padding: 2px 5px;
+  border: 1px solid rgb(82, 79, 79);
+  text-align: center;
+  background-color: white;
+}
+
+tbody tr td:nth-child(1) {
+  text-align: left;
+}
+
+tbody tr td:nth-child(5) {
+  text-align: center;
+}
+td img{
+  width: 2rem;
+}

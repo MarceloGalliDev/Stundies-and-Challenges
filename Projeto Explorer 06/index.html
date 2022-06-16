@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stage 04</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>Calculando Valores</h1>
+  <div class="numbers">
+    <label for="txtn1">Digite o primeiro número</label>
+    <input type="number" name="txtn1" id="txtn1">
+    <label for="txtn2">Digite o segundo número</label>
+    <input type="number" name="txtn2" id="txtn2">
+  </div>
+  <div class="result">
+    <input type="button" value="Somar" onclick="somar()">
+    <input type="button" value="Subtrair" onclick="subtrair()">
+    <input type="button" value="Multiplicar" onclick="multiplicar()">
+    <input type="button" value="Dividir" onclick="dividir()">
+    <input type="button" value="Resto da divisão" onclick="resto()">
+  </div>
+  <div id="res">Resultado:</div>
+  <div id="verifyOne"></div>
+  <div id="verifyTwo"></div>
+</body>
+</html>

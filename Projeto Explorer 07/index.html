@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Palanquin&family=Staatliches&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
+  <link rel="shortcut icon" href="Image/icone.ico" type="image/x-icon">
+  <title>Stage 04</title>
+</head>
+<body>
+  <header>
+    <h1>Grade control</h1>
+  </header>
+  <main>
+    
+    <div class="title">
+      <h2>student registration</h2>
+    </div>
+
+    <div class="cards">
+
+      <div class="lineInput">
+        <label for="name1">Enter the student name:</label>
+        <input type="text" name="name1" id="name1" placeholder="Student's name">
+      </div>
+
+      <div class="lineInput">
+        <label for="grade1">Enter the first note:</label>
+        <input type="number" name="grade1" id="grade1" placeholder="First note">
+      </div>
+      
+      <div class="lineInput">
+        <label for="grade2">Enter the second note:</label>
+        <input type="number" name="grade2" id="grade2" placeholder="Second note">
+      </div>
+
+      <button id="update" onclick="student.saveItems()">Save</button>
+      <button onclick="student.clearItems()">Clear</button>
+    </div>
+
+    <div class="content">
+      <table>
+        <thead>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Grade 1</th>
+          <th>Grade 2</th>
+          <th>Result</th>
+          <th>Action</th>
+        </thead>
+        <tbody id="tbody">
+          
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+
+</body>
+</html>
+
+<!--https://www.flaticon.com/br/icone-animado-gratis/foguete_6172512?related_id=6172512-->
+<!--
+  TR = Linha da table
+  TD = Coluna da table
+-->

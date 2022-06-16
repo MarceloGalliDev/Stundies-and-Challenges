@@ -1,0 +1,60 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;/*alinha todos os texto dentro do body, inclusive tags que não possui delimitadores, como a, img*/
+  margin: 0;
+}
+
+#hero {
+  width: 592px;/*a partir do momento que incluimos o width, limitamos o tamanho da caixa, fazendo com que saia fora dp alinhameto*/
+  margin: auto;/*o margin: auto, foi utilizado para alinha o espaço sobrando da direita incluído no espaço faltante da esquerda*/
+  margin: 0 auto 72px;
+}
+
+#hero img {
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 35px;
+  line-height: 45px; /*altura de linha*/
+  font-weight: normal;
+  margin-bottom: 32px;
+}
+
+h1 span {
+  font-weight: bold;
+}
+
+span, a {
+  color: #ff9900;
+}
+
+p #footer {
+  color: #7d7987;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+#footer a + a {
+  margin-left: 28px;
+}/*no caso a + a, corresponde ao ler da direita para esquerda, pegue um a, que anterior a ele seja um a, pega o a que está sendo acionado*/
+
+.line {
+  width: 568px;
+  height: 0px;
+  border: 1px solid #eceff2;
+  margin: 8px auto 8px;
+}
+
+
+#balls {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #ff9900;
+}

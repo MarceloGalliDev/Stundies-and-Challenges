@@ -1,15 +1,39 @@
-# Stundies-and-Challenges
- Study journey and challenges
+Galli, Marcelo L.
 
-Stundies-and-Challenges
-Study days and challenges
+• Entusiasta por tecnologia e engajamento digital, gerador de ideias e criatividade em soluções.
+• Cada vez mais apaixonado por tecnologias como ReactJS e ReactJS-Native.
+• Me divirto montando Machine Learning, controles IoT e Robôs Controlados por Python e Arduino.
+• Tenho boa predileção com marketing e vendas.
 
-Beginning of my journey in the world of programming, first steps, first challenges and exercises.
+Foram utilizados várias bibliotecas/frameworks/aplicativos/database, principais sendo:
 
-Starting with a free Curso em Vídeo (by Gustavo Guanabara), I took over 200 classes, learning from scratch what HTML5 and CSS3 is. Link: https://www.cursoemvideo.com/
+Front-End:
+- React (vite)
+- React Native 
+- TypeScrypt
+- TailWind CSS
+- SASS
+- Prisma
+- Expo
 
-Posteriormente dei início a grande jornada na Rocketseat, com curso chamado de Discovery, e fazendo parte do programa de aceleração que se chama Explorer, onde buscamos estudar para um Full-Stack. Link: https://www.rocketseat.com.br/
+Back-End:
+- Firebase
+- SQLite
 
-And I use this space as my evolution diary, demonstrating my skills and technical growth, soft skills, hard skills and community engagement.
+Testes:
+- Jest
 
-Thanks
+
+> Siga rocketseat.com.br
+
+> Siga cursoemvideo.com.br
+
+Alguns outros projetos como diversão em linguagem Python, utilizando:
+- Numpy
+- Chatterbot
+- SpeechRecognition
+- Pyttsx3
+
+Aplicativo pode ser acessado pelo link:
+
+https://letmeask-thisoops.web.app/
