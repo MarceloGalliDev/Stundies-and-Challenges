@@ -24,8 +24,9 @@ Testes:
 - Jest
 
 
-Siga rocketseat.com.br
-Siga cursoemvideo.com.br
+> Siga rocketseat.com.br
+
+> Siga cursoemvideo.com.br
 
 Alguns outros projetos como diversão em linguagem Python, utilizando:
 - Numpy
