@@ -6,6 +6,7 @@ Galli, Marcelo L.
 • Tenho boa predileção com marketing e vendas.
 
 Foram utilizados várias bibliotecas/frameworks/aplicativos/database, principais sendo:
+
 Front-End:
 - React (vite)
 - React Native 
