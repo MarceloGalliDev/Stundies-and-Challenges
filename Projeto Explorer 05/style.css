@@ -115,13 +115,13 @@ main {
   width: 32rem;
   height: 45rem;
 }
-.massas {
+.iceCreamDough {
   background-image: url(image/sorvete3.png);
   background-repeat: no-repeat;
   width: 32rem;
   height: 25rem;
 }
-.picoles {
+.popsicle {
   background-image: url(image/sorvete4.png);
   background-repeat: no-repeat;
   width: 32rem;
@@ -240,14 +240,14 @@ footer {
     width: 22rem;
     height: 35rem;
   }
-  .massas {
+  .iceCreamDough {
     background-image: url(image/sorvete3.png);
     background-repeat: no-repeat;
     background-size: 22rem 15rem;
     width: 22rem;
     height: 15rem;
   }
-  .picoles {
+  .popsicle {
     background-image: url(image/sorvete4.png);
     background-repeat: no-repeat;
     background-size: 22rem 35rem;
